@@ -1,0 +1,35 @@
+version: 2
+ 
+sources:
+  - name: house_price1
+    database: database1
+    schema: public
+    tables:
+      - name: house_price
+        description: data from database1
+      - name: source_data
+        description: data from database1
+ 
+  - name: house_price2
+    database: database2
+    schema: public
+    tables:
+      - name: house_price
+        description: data from database2
+      - name: DESTINATION_DATA
+        description: data from database1
+ 
+  - name: house_price1_info_schema
+    database: database1
+    schema: INFORMATION_SCHEMA
+    tables:
+      - name: COLUMNS
+        description: house_price data_1 meta data
+ 
+  - name: house_price2_info_schema
+    database: database2
+    schema: INFORMATION_SCHEMA
+    tables:
+      - name: COLUMNS
+        description: house_price data_2 meta data
+  
