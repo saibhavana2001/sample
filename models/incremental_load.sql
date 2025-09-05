@@ -1,7 +1,7 @@
 {{
     config(
-        materialized='incremental',
-        unique_key='id'
+        materialized='incremental', --model materialization 
+        unique_key='id'  -- primary key of the table
     )
 }}
 
